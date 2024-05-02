@@ -1,0 +1,71 @@
+subprojects {
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        implementation 'org.slf4j:slf4j-api:1.7.36'
+        implementation 'com.google.code.gson:gson:2.10.1'
+        implementation 'com.google.guava:guava:31.1-jre'
+        implementation 'org.apache.commons:commons-lang3:3.12.0'
+        implementation 'org.apache.logging.log4j:log4j-slf4j-impl:2.17.2'
+    }
+
+    // Задача fatJar добавлена только в приложения с точкой входа
+    if (project.hasProperty('mainClassName')) {
+        tasks.register('fatJar', Jar) {
+            archiveBaseName.set(project.name + '-fat')
+            archiveClassifier.set('')
+
+            from sourceSets.main.output
+
+            manifest {
+                attributes('Main-Class': project.mainClassName)
+            }
+
+            from {
+                configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+            }
+
+            duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+        }
+    }
+}
+
+project(':server') {
+    apply plugin: 'application'
+    mainClassName = 'server.App'
+
+    dependencies {
+        implementation project(':common')
+    }
+
+    jar {
+        manifest.attributes(
+                'Main-Class': 'server.App',
+                'Implementation-Title': 'Gradle Server'
+        )
+    }
+}
+
+project(':client') {
+    apply plugin: 'application'
+    mainClassName = 'client.App'
+
+    dependencies {
+        implementation project(':common')
+    }
+
+    run {
+        standardInput = System.in
+    }
+
+    jar {
+        manifest.attributes(
+                'Main-Class': 'client.App',
+                'Implementation-Title': 'Gradle Client'
+        )
+    }
+}

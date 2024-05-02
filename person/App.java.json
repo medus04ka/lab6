@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "pvc",
+    "coordinates": {
+      "x": 52,
+      "y": 228
+    },
+    "creationDate": "2024-05-02",
+    "realHero": true,
+    "hasToothpick": false,
+    "impactSpeed": 453,
+    "weaponType": "AXE",
+    "mood": "CALM",
+    "car": null
+  },
+  {
+    "id": 2,
+    "name": "pvc",
+    "coordinates": {
+      "x": 52,
+      "y": 228
+    },
+    "creationDate": "2024-05-02",
+    "realHero": true,
+    "hasToothpick": false,
+    "impactSpeed": 453,
+    "weaponType": "AXE",
+    "mood": "CALM",
+    "car": null
+  },
+  {
+    "id": 3,
+    "name": "pvc",
+    "coordinates": {
+      "x": 52,
+      "y": 228
+    },
+    "creationDate": "2024-05-02",
+    "realHero": true,
+    "hasToothpick": false,
+    "impactSpeed": 453,
+    "weaponType": "AXE",
+    "mood": "CALM",
+    "car": null
+  },
+  {
+    "id": 4,
+    "name": "pvc",
+    "coordinates": {
+      "x": 52,
+      "y": 228
+    },
+    "creationDate": "2024-05-02",
+    "realHero": true,
+    "hasToothpick": false,
+    "impactSpeed": 453,
+    "weaponType": "AXE",
+    "mood": "CALM",
+    "car": null
+  },
+  {
+    "id": 5,
+    "name": "pvc",
+    "coordinates": {
+      "x": 52,
+      "y": 228
+    },
+    "creationDate": "2024-05-02",
+    "realHero": true,
+    "hasToothpick": false,
+    "impactSpeed": 453,
+    "weaponType": "AXE",
+    "mood": "CALM",
+    "car": null
+  },
+  {
+    "id": 6,
+    "name": "pvc",
+    "coordinates": {
+      "x": 52,
+      "y": 228
+    },
+    "creationDate": "2024-05-02",
+    "realHero": true,
+    "hasToothpick": false,
+    "impactSpeed": 453,
+    "weaponType": "AXE",
+    "mood": "CALM",
+    "car": null
+  },
+  {
+    "id": 7,
+    "name": "pvc",
+    "coordinates": {
+      "x": 52,
+      "y": 228
+    },
+    "creationDate": "2024-05-02",
+    "realHero": true,
+    "hasToothpick": false,
+    "impactSpeed": 453,
+    "weaponType": "AXE",
+    "mood": "CALM",
+    "car": null
+  },
+  {
+    "id": 8,
+    "name": "pvc",
+    "coordinates": {
+      "x": 52,
+      "y": 228
+    },
+    "creationDate": "2024-05-02",
+    "realHero": true,
+    "hasToothpick": false,
+    "impactSpeed": 453,
+    "weaponType": "AXE",
+    "mood": "CALM",
+    "car": null
+  },
+  {
+    "id": 9,
+    "name": "pvc",
+    "coordinates": {
+      "x": 52,
+      "y": 228
+    },
+    "creationDate": "2024-05-02",
+    "realHero": true,
+    "hasToothpick": false,
+    "impactSpeed": 453,
+    "weaponType": "AXE",
+    "mood": "CALM",
+    "car": null
+  }
+]

@@ -1,0 +1,3 @@
+info
+execute_script C:/Users/Windows 11/IdeaProjects/lab6/person/recurs.txt
+info
